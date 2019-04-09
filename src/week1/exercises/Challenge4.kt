@@ -27,3 +27,45 @@ Hints: map() and flatMap() are often very useful functions for such tasks
 Use IntelliJ's autocompletion to explore which other functions, that were not
 presented in the lectures, are available (they could simplify the tasks)
  */
+
+fun main() {
+    findAverage(cleanData())
+    findFaultyFiles()
+    countFaultyEntries()
+}
+
+fun cleanData() : List<Int> {
+    val dataValues = mutableListOf<Int>()
+    for (key in data.keys) {
+        for (num in data.get(key)!!) {
+            dataValues.add(num)
+        }
+    }
+    return dataValues.filter { it > 0 }
+}
+
+fun findAverage(validData : List<Int>) {
+    val output = "%.2f".format(validData.average())
+    println("The average age is $output")
+}
+
+fun findFaultyFiles() {
+    val fileNames = mutableListOf<String>()
+    for (key in data.keys) {
+        if (data.get(key).isNullOrEmpty()) fileNames.add(key)
+        for (num in data.get(key)!!) {
+            if (num <= 0) fileNames.add(key)
+        }
+    }
+    println("The following files have faulty or empty data: $fileNames")
+}
+
+fun countFaultyEntries() {
+    var faultyValues = 0
+    for (key in data.keys) {
+        for (num in data.get(key)!!) {
+            if (num <= 0) faultyValues++
+        }
+    }
+    println("Number of faulty values: $faultyValues")
+}

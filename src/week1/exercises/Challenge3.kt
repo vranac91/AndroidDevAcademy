@@ -13,25 +13,26 @@ Implement goRight(), goLeft(), goUp(), goDown() and getLocation() member functio
  */
 
 class Robot {
-    /*TODO*/
+    var x: Int = 0
+    var y: Int = 0
 
     fun goRight(steps: Int) {
-        TODO()
+        x += steps
     }
 
     fun goLeft(steps: Int) {
-        TODO()
+        x -= steps
     }
 
     fun goDown(steps: Int) {
-        TODO()
+        y += steps
     }
 
     fun goUp(steps: Int) {
-        TODO()
+        y -= steps
     }
 
-    fun getLocation(): String = TODO()
+    fun getLocation(): String = "($x,$y)"
 }
 
 fun main(args: Array<String>) {
