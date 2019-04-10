@@ -28,34 +28,42 @@ Use IntelliJ's autocompletion to explore which other functions, that were not
 presented in the lectures, are available (they could simplify the tasks)
  */
 
+// ----------------------------------------------------------------------------
+
+// SOLUTION 1
+
 fun main() {
+    // solution 1
+    println("--- SOLUTION 1 ---")
     findAverage(cleanData())
     findFaultyFiles()
     countFaultyEntries()
+    println()
+
+    // solution 2
+    println("--- SOLUTION 2 ---")
+    findAverageAge()
+    printFaultyFiles()
+    countFaultyData()
 }
 
 fun cleanData() : List<Int> {
     val dataValues = mutableListOf<Int>()
     for (key in data.keys) {
-        for (num in data.get(key)!!) {
-            dataValues.add(num)
-        }
+        for (num in data[key]!!) dataValues.add(num)
     }
     return dataValues.filter { it > 0 }
 }
 
 fun findAverage(validData : List<Int>) {
-    val output = "%.2f".format(validData.average())
-    println("The average age is $output")
+    println("The average age is ${"%.2f".format(validData.average())}")
 }
 
 fun findFaultyFiles() {
     val fileNames = mutableListOf<String>()
     for (key in data.keys) {
-        if (data.get(key).isNullOrEmpty()) fileNames.add(key)
-        for (num in data.get(key)!!) {
-            if (num <= 0) fileNames.add(key)
-        }
+        if (data[key].isNullOrEmpty()) fileNames.add(key)
+        for (num in data.get(key)!!) if (num <= 0) fileNames.add(key)
     }
     println("The following files have faulty or empty data: $fileNames")
 }
@@ -63,9 +71,30 @@ fun findFaultyFiles() {
 fun countFaultyEntries() {
     var faultyValues = 0
     for (key in data.keys) {
-        for (num in data.get(key)!!) {
-            if (num <= 0) faultyValues++
-        }
+        for (num in data[key]!!) if (num <= 0) faultyValues++
     }
     println("Number of faulty values: $faultyValues")
+}
+
+// -----------------------------------------------------------------------------
+
+// SOLUTION 2
+
+fun clearData() : List<Int> {
+    return data.flatMap { it.value }
+            .filter { it > 0 }
+            .toList()
+}
+
+fun findAverageAge() {
+    println("The average age is ${"%.2f".format(clearData().average())}")
+}
+
+fun printFaultyFiles() {
+    val faultyFileNames = data.filterValues { it.isNullOrEmpty() || it.any { it < 0 } }.keys
+    println("The following files have faulty or empty data: $faultyFileNames")
+}
+
+fun countFaultyData() {
+    println("Number of faulty values: ${data.filterValues { it.any { it <= 0 }}.size}")
 }

@@ -20,5 +20,5 @@ fun getExternalInput() {
 }
 
 fun throwIndexOutOfBoundsException(): Nothing {
-    throw IndexOutOfBoundsException("Index is 5, but size of the array is 4")
+    throw IndexOutOfBoundsException("Index is 5, but size of the array is 4") as Throwable
 }
