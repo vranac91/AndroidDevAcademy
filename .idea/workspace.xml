@@ -2,9 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dbf3d80-0fb6-4f49-bfe9-f6c0408f1584" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/week2/homework/data/Enemies.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/homework/data/Items.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/homework/enemies/BoneDragon.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/homework/enemies/FireDemon.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/homework/enemies/Ghoul.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/homework/enemies/SpectralHydra.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/homework/enemies/Wraith.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/homework/gamemechanics/Battle.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/homework/ui/BattleActions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/homework/ui/CharacterSetup.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week1/basics/Exceptions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week1/basics/Exceptions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week1/exercises/Challenge4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week1/exercises/Challenge4.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/META-INF/AndroidDevAcademy.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/META-INF/AndroidDevAcademy.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/CollectionsKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/CollectionsKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/ConditionsKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/ConditionsKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/ExceptionsKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/ExceptionsKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/FunctionsKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/FunctionsKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/LoopsKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/LoopsKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/NullabilityKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/NullabilityKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/VariablesTypesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/basics/VariablesTypesKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/exercises/Challenge1Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/exercises/Challenge1Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/exercises/Challenge2Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/exercises/Challenge2Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/exercises/Challenge3Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/exercises/Challenge3Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/exercises/Challenge4Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/exercises/Challenge4Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/exercises/Robot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/exercises/Robot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/ExtensionsKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/ExtensionsKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/FunctionChainingKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/FunctionChainingKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/LambdasKt$main$addition$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/LambdasKt$main$addition$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/LambdasKt$main$doubleValue$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/LambdasKt$main$doubleValue$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/LambdasKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/LambdasKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/LazySequencesKt$main$msLazy$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/LazySequencesKt$main$msLazy$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/LazySequencesKt$main$msLazy$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/LazySequencesKt$main$msLazy$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/LazySequencesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/LazySequencesKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/Test$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/Test$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/UseKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/functional/UseKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Bicycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Bicycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/ClassesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/ClassesKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/CompanionKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/CompanionKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/ConstructorsKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/ConstructorsKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/CountryFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/CountryFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/County.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/County.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/DataClassesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/DataClassesKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Direction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Driveable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Driveable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Empty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Empty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/EnumsKt$WhenMappings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/EnumsKt$WhenMappings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/EnumsKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/EnumsKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/House$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/House$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/House.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/House.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/HouseFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/HouseFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/InterfacesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/InterfacesKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Plane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Plane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Suits.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/Suits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/VisibilitiesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidDevAcademy/oop/VisibilitiesKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/character/Character.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/character/Character.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/character/CharacterClass.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/character/CharacterClass.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/enemies/BaseEnemy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/enemies/BaseEnemy.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/enemies/Boss.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/enemies/Boss.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/gamemechanics/CharacterSetup.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/gamemechanics/SetupCharacterData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/items/Armor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/items/Armor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/items/Axe.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/items/Axe.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/items/BaseItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/items/BaseItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/items/EnergyPotion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/items/EnergyPotion.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/items/Gold.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/items/Gold.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/items/HealthPotion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/items/HealthPotion.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/items/Ring.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/items/Ring.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/items/Shield.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/items/Shield.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/items/Staff.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/items/Staff.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/items/Sword.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/homework/items/Sword.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/homework/monsters/BaseMonster.kt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,88 +87,130 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1118431267">
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="kt" value="2341" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Kotlin" value="2341" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="iml" value="1" />
-          <entry key="kt" value="24" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="Kotlin" value="24" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/oop/Enums.kt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/week2/homework/enemies/BaseEnemy.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/week1/exercises/Challenge4.kt">
+        <entry file="file://$PROJECT_DIR$/src/week2/homework/enemies/Ghoul.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="98" column="11" lean-forward="true" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
+            <state relative-caret-position="201">
+              <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+              <folding>
+                <element signature="e#32#148#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/functional/FunctionChaining.kt">
+        <entry file="file://$PROJECT_DIR$/src/week2/homework/character/Character.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="-210">
+              <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+              <folding>
+                <element signature="e#34#110#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/basics/Collections.kt">
+        <entry file="file://$PROJECT_DIR$/src/week2/homework/enemies/Wraith.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46" />
+            <state relative-caret-position="120">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/oop/Interfaces.kt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/week2/homework/data/Items.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/oop/Singleton.kt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/week2/homework/character/CharacterClass.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/oop/Visibilities.kt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/week2/homework/items/Staff.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/week2/homework/items/Gold.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/week2/homework/spells/BaseSpell.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/week2/homework/enemies/BoneDragon.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>armor</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>shield</replace>
+      <replace>sword</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,12 +218,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/week1/exercises/Challenge2.kt" />
-        <option value="$PROJECT_DIR$/src/week1/exercises/Challenge3.kt" />
-        <option value="$PROJECT_DIR$/src/week1/functional/FunctionChaining.kt" />
         <option value="$PROJECT_DIR$/src/week1/basics/Exceptions.kt" />
         <option value="$PROJECT_DIR$/src/week1/basics/Conditions.kt" />
         <option value="$PROJECT_DIR$/src/week1/exercises/Challenge4.kt" />
+        <option value="$PROJECT_DIR$/src/week2/lecture/Anonymous.kt" />
+        <option value="$PROJECT_DIR$/src/week2/lecture/Main.java" />
+        <option value="$PROJECT_DIR$/src/week2/lecture/Main.kt" />
+        <option value="$PROJECT_DIR$/src/week2/lecture/Receipts.kt" />
+        <option value="$PROJECT_DIR$/src/week2/lecture/Generics.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/Class.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/Attribute.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/Item.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/character_properties/Attribute.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/characterproperties/Attribute.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/items/Item.kt" />
+        <option value="$PROJECT_DIR$/src/week1/oop/Constructors.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/BaseItem.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/CharacterClass.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/Character.kt" />
+        <option value="$PROJECT_DIR$/src/week1/oop/Enums.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/gamemechanics/Helpers.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/spells/BaseSpell.kt" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/week2/homework/gamemechanics/CharacterSetup.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/gamemechanics/Battle.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/enemies/Boss.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/data/ItemNames.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/enemies/SpectralHydra.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/enemies/BoneDragon.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/enemies/Wraith.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/enemies/FireDemon.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/ui/UserInterface.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/gamemechanics/SetupCharacterData.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/ui/CharacterSetup.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/ui/BattleActions.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/data/Enemies.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/items/Armor.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/items/BaseItem.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/items/Axe.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/items/EnergyPotion.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/items/HealthPotion.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/items/Ring.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/items/Shield.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/Main.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/character/Character.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/character/CharacterClass.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/items/Sword.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/data/Items.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/items/Staff.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/items/Gold.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/enemies/BaseEnemy.kt" />
+        <option value="$PROJECT_DIR$/src/week2/homework/enemies/Ghoul.kt" />
       </list>
     </option>
   </component>
@@ -117,15 +278,16 @@
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,28 +304,62 @@
               <item name="AndroidDevAcademy" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidDevAcademy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week1" type="462c0819:PsiDirectoryNode" />
+              <item name="week2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidDevAcademy" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidDevAcademy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week1" type="462c0819:PsiDirectoryNode" />
-              <item name="basics" type="462c0819:PsiDirectoryNode" />
+              <item name="week2" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidDevAcademy" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidDevAcademy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week1" type="462c0819:PsiDirectoryNode" />
-              <item name="exercises" type="462c0819:PsiDirectoryNode" />
+              <item name="week2" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="character" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidDevAcademy" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidDevAcademy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="week1" type="462c0819:PsiDirectoryNode" />
-              <item name="functional" type="462c0819:PsiDirectoryNode" />
+              <item name="week2" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevAcademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevAcademy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="week2" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="enemies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevAcademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevAcademy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="week2" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="items" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevAcademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevAcademy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="week2" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="spells" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevAcademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevAcademy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="week2" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidDevAcademy" type="b2602c69:ProjectViewProjectNode" />
@@ -176,13 +372,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554937387565" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556490789412" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="week2.homework.enemies" />
+      <recent name="week2.homework.items" />
+      <recent name="week2.homework.character" />
+      <recent name="week2.homework.character_properties" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ana\Documents\IdeaProjects\" />
       <recent name="C:\Users\Ana\Documents\IdeaProjects\KotlinApprentice\AndroidDevAcademy\src\week1" />
@@ -200,7 +403,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.exercises.Challenge4Kt">
+  <component name="RunManager" selected="Kotlin.week2.homework.MainKt">
     <configuration name="exercises.Challenge2Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="AndroidDevAcademy" />
       <option name="VM_PARAMETERS" />
@@ -253,14 +456,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="week2.homework.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="AndroidDevAcademy" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="week2.homework.MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Kotlin.exercises.Challenge2Kt" />
       <item itemvalue="Kotlin.exercises.Challenge3Kt" />
       <item itemvalue="Kotlin.exercises.Challenge4Kt" />
       <item itemvalue="Kotlin.functional.FunctionChainingKt" />
+      <item itemvalue="Kotlin.week2.homework.MainKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.week2.homework.MainKt" />
         <item itemvalue="Kotlin.exercises.Challenge4Kt" />
         <item itemvalue="Kotlin.functional.FunctionChainingKt" />
         <item itemvalue="Kotlin.exercises.Challenge3Kt" />
@@ -281,12 +499,21 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7082452" visible="true" weight="0.27449664" />
+      <window_info id="Structure" order="1" sideWeight="0.29175475" side_tool="true" weight="0.2590604" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -294,15 +521,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32907802" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -311,121 +538,335 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/week1/functional/FunctionChaining.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/basics/Collections.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/characterproperties/Class.kt" />
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/items/Bow.kt" />
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/characterproperties/Attribute.kt" />
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/items/Item.kt" />
+    <entry file="file://$PROJECT_DIR$/src/week1/oop/Visibilities.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/oop/Interfaces.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/oop/Companion.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/oop/Constructors.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/lecture/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/oop/Singleton.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/oop/Enums.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/oop/DataClasses.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/monsters/BaseMonster.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/exercises/Challenge3.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/exercises/Challenge2.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="195">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/exercises/Challenge1.kt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/exercises/Challenge3.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/functional/Lambdas.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/functional/LazySequences.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/functional/Use.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidDevAcademy.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/exercises/Homework.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/basics/Functions.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-265" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/basics/Loops.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/basics/Conditions.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/basics/Exceptions.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/basics/VariablesTypes.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/oop/Interfaces.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/oop/Singleton.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/oop/Visibilities.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/functional/Extensions.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/oop/Classes.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/oop/Constructors.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/oop/DataClasses.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/oop/Enums.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/basics/Collections.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/functional/FunctionChaining.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/exercises/Challenge4.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="98" column="11" lean-forward="true" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
+        <state relative-caret-position="-145">
+          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="86" lean-forward="true" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/lecture/Anonymous.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/lecture/Generics.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/lecture/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/lecture/Receipts.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/enemies/SpectralHydra.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/enemies/FireDemon.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/gamemechanics/SetupCharacterData.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+          <folding>
+            <element signature="e#38#126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/gamemechanics/Battle.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/ui/CharacterSetup.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+          <folding>
+            <element signature="e#27#170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/enemies/Boss.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/data/Enemies.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/ui/BattleActions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="62" lean-forward="true" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/items/Armor.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/items/Axe.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/items/BaseItem.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/items/EnergyPotion.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/items/HealthPotion.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/items/Ring.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/items/Shield.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/items/Sword.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#24#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/character/Character.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding>
+            <element signature="e#34#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/character/CharacterClass.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/items/Staff.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/items/Gold.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/spells/BaseSpell.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/enemies/BoneDragon.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/enemies/Wraith.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/data/Items.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/enemies/BaseEnemy.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/homework/enemies/Ghoul.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+          <folding>
+            <element signature="e#32#148#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

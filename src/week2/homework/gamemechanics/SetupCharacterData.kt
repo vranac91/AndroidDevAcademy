@@ -3,7 +3,7 @@ package week2.homework.gamemechanics
 import week2.homework.character.Character
 import week2.homework.character.CharacterClass
 
-class CharacterSetup {
+class SetupCharacterData {
     companion object {
         fun setClassAtributes(chosenClass : CharacterClass) {
             Character.strength = chosenClass.strength

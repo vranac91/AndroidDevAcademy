@@ -1,18 +1,22 @@
 package week2.homework.enemies
 
-import week2.homework.items.BaseItem
+import week2.homework.gamemechanics.Battle
 
-object Boss : BaseEnemy() {
-    override val name = "Arkhanu Amun"
-    override val experience = 500
-    override var health = 100
-    override var energy = 150
-    override val attack = 10..20
-    override val defense = 0..10
-    override val items: List<BaseItem> = listOf()
-
-    override fun attack() : Int {
+object Boss : BaseEnemy(
+        name = "Arkhanu Amun",
+        experience = 500,
+        health = 100,
+        energy = 150,
+        attack = 10..20,
+        defense = 0..10,
+        items = listOf()
+), Battle {
+    override fun attackPhysical(): Int {
         return attack.random()
+    }
+
+    override fun attackMagical(): Int {
+        return 0
     }
 
     override fun block() : Int {
@@ -20,7 +24,7 @@ object Boss : BaseEnemy() {
     }
 
     override fun die() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
 }
