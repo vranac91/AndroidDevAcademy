@@ -13,9 +13,10 @@ class Shield(
     override val intelligenceBoost = 0
     override val attackBoost = 0
     override val defenseBoost = shieldDefenseBoost
-    override val isEquipped = false
+    override var isEquipped = false
     override val name = shieldName
     override val size = shieldSize
     override val value = shieldValue
     override val requirements = shieldReq
+    override var canBeEquipped = true
 }

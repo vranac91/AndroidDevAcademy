@@ -12,17 +12,21 @@ abstract class BaseItem {
     abstract val intelligenceBoost: Int
     abstract val attackBoost: Int
     abstract val defenseBoost: Int
-    abstract val isEquipped: Boolean
+    abstract var isEquipped: Boolean
+    abstract var canBeEquipped: Boolean
 
     fun isEquipable() : Boolean {
-        val (strength, dexterity, intelligence) = requirements
-        return Character.strength >= strength && Character.dexterity >= dexterity && Character.intelligence >= intelligence
+        if (canBeEquipped) {
+            val (strength, dexterity, intelligence) = requirements
+            return Character.strength >= strength && Character.dexterity >= dexterity && Character.intelligence >= intelligence
+        }
+        return false
     }
 
     override fun toString(): String {
         return "$name - size: $size, " +
                 "value: $value, " +
-                "requirements: strength - {${requirements.first}, dexterity - ${requirements.second}, intelligence - ${requirements.third}"
+                "requirements: strength - ${requirements.first}, dexterity - ${requirements.second}, intelligence - ${requirements.third}"
     }
 
     fun printItemInfo() {

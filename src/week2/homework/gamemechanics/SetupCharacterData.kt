@@ -9,6 +9,7 @@ class SetupCharacterData {
             Character.strength = chosenClass.strength
             Character.dexterity = chosenClass.dexterity
             Character.intelligence = chosenClass.intelligence
+            Character.refreshStats()
         }
     }
 }

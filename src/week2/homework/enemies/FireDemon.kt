@@ -1,6 +1,6 @@
 package week2.homework.enemies
 
-import week2.homework.gamemechanics.Battle
+import week2.homework.character.Character
 
 class FireDemon : BaseEnemy(
         name = "Fire Demon",
@@ -10,22 +10,23 @@ class FireDemon : BaseEnemy(
         attack = (2..4).random()..(4..8).random(),
         defense = 3..5,
         items = mutableListOf()
-), Battle {
+) {
     var attackLow = attack.start
     var attackHigh = attack.endInclusive
     var attackRange = attackLow..attackHigh
 
-    override fun attackPhysical(): Int {
-        return 0
+    override fun attackPhysical() {
+        val damage = super.attackPhysical()
+        println("$name attacked you and reduced your health by $damage to ${Character.health}")
     }
 
-    override fun attackMagical(): Int {
+    override fun attackMagical() {
         if (energy >= 6) {
             energy -= 6
             attackLow++
             attackHigh++
-            return attackRange.random()
-        } else return attackPhysical()
+            Character.health -= attackRange.random()
+        } else attackPhysical()
     }
 
     fun restoreEnergy() {
@@ -37,5 +38,5 @@ class FireDemon : BaseEnemy(
         return defense.random()
     }
 
-    override fun die() {if (this.health <= 0) println("You killed the $name!")}
+    override fun die() {println("You killed the $name!")}
 }

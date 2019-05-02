@@ -17,5 +17,6 @@ class Staff(
     override val intelligenceBoost = staffIntelligenceBoost
     override val attackBoost = staffAttackBoost
     override val defenseBoost = 0
-    override val isEquipped = false
+    override var isEquipped = false
+    override var canBeEquipped = true
 }

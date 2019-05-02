@@ -1,6 +1,6 @@
 package week2.homework.enemies
 
-import week2.homework.gamemechanics.Battle
+import week2.homework.character.Character
 
 class Wraith : BaseEnemy(
         name = "Wraith",
@@ -10,16 +10,17 @@ class Wraith : BaseEnemy(
         attack = (1..3).random()..(4..6).random(),
         defense = 2..4,
         items = mutableListOf()
-), Battle {
-    override fun attackPhysical(): Int {
-        return attack.random() - 1
+) {
+    override fun attackPhysical() {
+        val damage = super.attackPhysical()
+        println("$name attacked you and reduced your health to ${Character.health}")
     }
 
-    override fun attackMagical(): Int {
+    override fun attackMagical() {
         if (energy >= 5) {
             energy -= 5
-            return attack.random() + 1
-        } else return 0
+            Character.health -= attack.random() + 1
+        }
     }
 
     override fun block(): Int { return defense.random() }

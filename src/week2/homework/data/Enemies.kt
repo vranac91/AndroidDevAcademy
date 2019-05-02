@@ -8,8 +8,9 @@ object Enemies {
     private val fireDemons = mutableListOf<FireDemon>()
     private val spectralHydras = mutableListOf<SpectralHydra>()
     private val boneDragons = mutableListOf<BoneDragon>()
+    val enemiesList = getEnemies()
 
-    fun generate() {
+    private fun generate() {
         for (i in 0..4) {
             ghouls.add(Ghoul())
             wraiths.add(Wraith())
@@ -19,9 +20,9 @@ object Enemies {
         }
     }
 
-    fun getEnemies(): List<BaseEnemy> {
+    fun getEnemies(): MutableList<BaseEnemy> {
         generate()
-        val enemies = mutableListOf<BaseEnemy>()
+        var enemies = mutableListOf<BaseEnemy>()
         enemies.add(ghouls.random())
         enemies.add(wraiths.random())
         enemies.add(fireDemons.random())
@@ -29,5 +30,9 @@ object Enemies {
         enemies.add(boneDragons.random())
         enemies.add(Boss)
         return enemies
+    }
+
+    fun removeDeadEnemy() {
+        enemiesList.removeAt(0)
     }
 }

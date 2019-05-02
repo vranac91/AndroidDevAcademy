@@ -13,9 +13,18 @@ class Armor (
     override val intelligenceBoost = 0
     override val attackBoost = 0
     override val defenseBoost = armorDefenseBoost
-    override val isEquipped = false
+    override var isEquipped = false
     override val name = armorName
     override val size = armorSize
     override val value = armorValue
     override val requirements = armorReq
+    override var canBeEquipped = true
+
+    override fun toString(): String {
+        return "$armorName - size: $armorSize, " +
+                "value: $armorValue, " +
+                "defense boost: $armorDefenseBoost, " +
+                "strength boost: $armorStrengthBoost, " +
+                "requirements: strength - ${requirements.first}, dexterity - ${requirements.second}, intelligence - ${requirements.third}"
+    }
 }

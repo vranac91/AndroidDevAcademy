@@ -16,5 +16,6 @@ class Axe(
     override val intelligenceBoost = 0
     override val attackBoost = axeAttackBoost
     override val defenseBoost = 0
-    override val isEquipped = false
+    override var isEquipped = false
+    override var canBeEquipped = true
 }

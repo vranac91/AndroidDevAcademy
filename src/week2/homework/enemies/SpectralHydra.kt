@@ -1,6 +1,6 @@
 package week2.homework.enemies
 
-import week2.homework.gamemechanics.Battle
+import week2.homework.character.Character
 
 class SpectralHydra : BaseEnemy(
         name = "Spectral Hydra",
@@ -10,16 +10,17 @@ class SpectralHydra : BaseEnemy(
         attack = (4..7).random()..(8..15).random(),
         defense = 3..6,
         items = mutableListOf()
-), Battle {
-    override fun attackPhysical(): Int {
-        return attack.random()
+) {
+    override fun attackPhysical() {
+        val damage = super.attackPhysical()
+        println("$name attacked you and reduced your health by $damage to ${Character.health}")
     }
 
-    override fun attackMagical(): Int {
+    override fun attackMagical() {
         if (energy >= 7) {
             energy -= 7
-            return attack.random() + 3
-        } else return attackPhysical()
+            Character.health -= attack.random() + 3
+        } else attackPhysical()
     }
 
     override fun block(): Int {
@@ -29,5 +30,5 @@ class SpectralHydra : BaseEnemy(
         return block()
     }
 
-    override fun die() {if (this.health <= 0) println("You killed the $name!")}
+    override fun die() {println("You killed the $name!")}
 }

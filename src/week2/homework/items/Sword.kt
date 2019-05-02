@@ -14,9 +14,10 @@ class Sword(
     override val intelligenceBoost = 0
     override val attackBoost = swordAttackBoost
     override val defenseBoost = 0
-    override val isEquipped = false
+    override var isEquipped = false
     override val name = swordName
     override val size = swordSize
     override val value = swordValue
     override val requirements = swordReq
+    override var canBeEquipped = true
 }

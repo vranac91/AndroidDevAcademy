@@ -3,6 +3,7 @@ package week2.homework.ui
 import week2.homework.character.Character
 import week2.homework.character.CharacterClass
 import week2.homework.gamemechanics.SetupCharacterData
+import week2.homework.ui.GameplayActions.Companion.printCharacterData
 
 class CharacterSetup {
     companion object {
@@ -65,34 +66,6 @@ class CharacterSetup {
             println("Your character's class is $chosenClass!\n")
             SetupCharacterData.setClassAtributes(chosenClass)
             return chosenClass
-        }
-
-        fun printCharacterData() {
-            println("----------CHARACTER DATA----------")
-            println("Name: ${Character.name}" +
-                    "\nSex: ${Character.sex}" +
-                    "\nClass: ${Character.characterClass}" +
-                    "\nLevel: ${Character.level}" +
-                    "\nExperience: ${Character.experience}" +
-                    "\nHealth: ${Character.health}" +
-                    "\nEnergy: ${Character.energy}" +
-                    "\nStrength: ${Character.strength}" +
-                    "\nDexterity: ${Character.dexterity}" +
-                    "\nIntelligence: ${Character.intelligence}" +
-                    "\nAttack: ${Character.attack}" +
-                    "\nDefense: ${Character.defense}" +
-                    "\nGold: ${Character.gold}")
-        }
-
-        fun printInventoryData() {
-            println("----------INVENTORY DATA----------")
-            println("Inventory size: ${Character.inventorySize}")
-            for (item in Character.inventoryItems) println(item)
-        }
-
-        fun printEquippedItemsData() {
-            println("----------EQUIPPED ITEMS DATA----------")
-            for (item in Character.equippedItems) println(item)
         }
     }
 }

@@ -19,5 +19,6 @@ class Ring(
     override val intelligenceBoost = ringIntelligenceBoost
     override val attackBoost = ringAttackBoost
     override val defenseBoost = ringDefenseBoost
-    override val isEquipped = false
+    override var isEquipped = false
+    override var canBeEquipped = true
 }
