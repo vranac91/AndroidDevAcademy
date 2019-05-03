@@ -1,5 +1,7 @@
 package week2.homework.items
 
+import week2.homework.character.Character
+
 class Shield(
         val shieldName: String,
         val shieldSize: Int,
@@ -19,4 +21,11 @@ class Shield(
     override val value = shieldValue
     override val requirements = shieldReq
     override var canBeEquipped = true
+
+    override fun increaseAttribute() {
+        if (isEquipped) {
+            Character.strength += shieldStrengthBoost
+            Character.defense += shieldDefenseBoost
+        }
+    }
 }

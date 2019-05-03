@@ -21,9 +21,9 @@ abstract class BaseEnemy (
     }
 
     open fun attackPhysical() {
-        Character.health -= attack.random() + Character.block()
+        Character.healthCurrent -= attack.random() + Character.block()
     }
     abstract fun attackMagical()
-    abstract  fun block() : Int
+    abstract fun block() : Int
     abstract fun die()
 }

@@ -1,5 +1,7 @@
 package week2.homework.items
 
+import week2.homework.character.Character
+
 class Ring(
         private val ringName: String,
         private val ringValue: Int,
@@ -21,4 +23,14 @@ class Ring(
     override val defenseBoost = ringDefenseBoost
     override var isEquipped = false
     override var canBeEquipped = true
+
+    override fun increaseAttribute() {
+        if (isEquipped) {
+            Character.strength += ringStrengthBoost
+            Character.dexterity += ringDexterityBoost
+            Character.intelligence += ringIntelligenceBoost
+            Character.attack += ringAttackBoost
+            Character.defense += ringDefenseBoost
+        }
+    }
 }

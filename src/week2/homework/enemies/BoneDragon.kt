@@ -12,14 +12,14 @@ class BoneDragon : BaseEnemy(
         items = mutableListOf()
 ) {
     override fun attackPhysical() {
-        val damage = super.attackPhysical()
-        println("$name attacked you and reduced your health by $damage to ${Character.health}")
+        super.attackPhysical()
+        println("$name attacked you and reduced your health to ${Character.healthCurrent}")
     }
 
     override fun attackMagical() {
         if (energy >= 10) {
             energy -= 10
-            Character.health = (attack.random() * 1.5).toInt()
+            Character.healthCurrent = (attack.random() * 1.5).toInt()
         } else attackPhysical()
     }
 

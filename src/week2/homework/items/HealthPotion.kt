@@ -16,4 +16,6 @@ class HealthPotion : BaseItem() {
     override fun toString(): String {
         return name
     }
+
+    override fun increaseAttribute() {}
 }

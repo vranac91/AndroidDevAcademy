@@ -1,5 +1,7 @@
 package week2.homework.items
 
+import week2.homework.character.Character
+
 class Axe(
         private val axeName: String,
         private val axeSize: Int,
@@ -18,4 +20,9 @@ class Axe(
     override val defenseBoost = 0
     override var isEquipped = false
     override var canBeEquipped = true
+
+    override fun increaseAttribute() {
+        if (isEquipped) Character.attack += axeAttackBoost
+
+    }
 }

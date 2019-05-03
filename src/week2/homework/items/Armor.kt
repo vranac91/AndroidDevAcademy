@@ -1,5 +1,7 @@
 package week2.homework.items
 
+import week2.homework.character.Character
+
 class Armor (
         val armorName: String,
         val armorDefenseBoost: Int,
@@ -26,5 +28,12 @@ class Armor (
                 "defense boost: $armorDefenseBoost, " +
                 "strength boost: $armorStrengthBoost, " +
                 "requirements: strength - ${requirements.first}, dexterity - ${requirements.second}, intelligence - ${requirements.third}"
+    }
+
+    override fun increaseAttribute() {
+        if (isEquipped) {
+            Character.defense += armorDefenseBoost
+            Character.strength += armorStrengthBoost
+        }
     }
 }

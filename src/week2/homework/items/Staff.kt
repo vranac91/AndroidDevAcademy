@@ -1,5 +1,7 @@
 package week2.homework.items
 
+import week2.homework.character.Character
+
 class Staff(
         private val staffName: String,
         private val staffSize: Int,
@@ -19,4 +21,11 @@ class Staff(
     override val defenseBoost = 0
     override var isEquipped = false
     override var canBeEquipped = true
+
+    override fun increaseAttribute() {
+        if (isEquipped) {
+            Character.intelligence += staffIntelligenceBoost
+            Character.attack += staffAttackBoost
+        }
+    }
 }

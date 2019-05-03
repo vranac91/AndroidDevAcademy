@@ -168,4 +168,7 @@ object Items {
                     Triple(40,10,0)
             )
     )
+
+    val healthPotion = HealthPotion()
+    val energyPotion = EnergyPotion()
 }

@@ -18,4 +18,6 @@ class Gold (
     override fun toString(): String {
         return "$name - amount: $amount"
     }
+
+    override fun increaseAttribute() {}
 }

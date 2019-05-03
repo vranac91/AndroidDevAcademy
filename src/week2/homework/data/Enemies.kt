@@ -10,6 +10,11 @@ object Enemies {
     private val boneDragons = mutableListOf<BoneDragon>()
     val enemiesList = getEnemies()
 
+    /*
+    Generates 5 enemies of each kind with various properties.
+    Saves them to appropriate collections.
+     */
+
     private fun generate() {
         for (i in 0..4) {
             ghouls.add(Ghoul())
@@ -20,9 +25,14 @@ object Enemies {
         }
     }
 
+    /*
+    Fetches one enemy of each kind and saves them to a collection.
+    This collection is the list of enemies for the gameplay (increases randomness).
+     */
+
     fun getEnemies(): MutableList<BaseEnemy> {
         generate()
-        var enemies = mutableListOf<BaseEnemy>()
+        val enemies = mutableListOf<BaseEnemy>()
         enemies.add(ghouls.random())
         enemies.add(wraiths.random())
         enemies.add(fireDemons.random())
@@ -31,6 +41,11 @@ object Enemies {
         enemies.add(Boss)
         return enemies
     }
+
+    /*
+    Called when the enemy is killed.
+    Removes the first enemy from the gameplay enemies collection.
+     */
 
     fun removeDeadEnemy() {
         enemiesList.removeAt(0)

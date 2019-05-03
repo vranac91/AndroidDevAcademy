@@ -1,5 +1,7 @@
 package week2.homework.items
 
+import week2.homework.character.Character
+
 class Sword(
         val swordName: String,
         val swordSize: Int,
@@ -20,4 +22,12 @@ class Sword(
     override val value = swordValue
     override val requirements = swordReq
     override var canBeEquipped = true
+
+    override fun increaseAttribute() {
+        if (isEquipped) {
+            Character.attack += swordAttackBoost
+            Character.strength += swordStrengthBoost
+            Character.dexterity += swordDexterityBoost
+        }
+    }
 }

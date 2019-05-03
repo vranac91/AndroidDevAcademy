@@ -1,6 +1,7 @@
 package week2.homework.enemies
 
 import week2.homework.character.Character
+import kotlin.system.exitProcess
 
 object Boss : BaseEnemy(
         name = "Arkhanu Amun",
@@ -12,11 +13,13 @@ object Boss : BaseEnemy(
         items = listOf()
 ) {
     override fun attackPhysical() {
-        Character.health -= attack.random()
+        super.attackPhysical()
+        println("$name struck a mighty blow, reducing your health to ${Character.healthCurrent}/${Character.healthMax}")
     }
 
     override fun attackMagical() {
-        Character.health -= 15
+        Character.healthCurrent -= 15
+        println("$name hits you with magic bolt, reducing your health to ${Character.healthCurrent}/${Character.healthMax}")
     }
 
     override fun block() : Int {
@@ -24,7 +27,8 @@ object Boss : BaseEnemy(
     }
 
     override fun die() {
-        println("Congratulations, you've won!")
+        println("Congratulations, you've won! Thanks for playing!")
+        exitProcess(0)
     }
 
 }

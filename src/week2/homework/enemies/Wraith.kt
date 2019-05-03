@@ -1,6 +1,7 @@
 package week2.homework.enemies
 
 import week2.homework.character.Character
+import week2.homework.data.Items
 
 class Wraith : BaseEnemy(
         name = "Wraith",
@@ -9,17 +10,27 @@ class Wraith : BaseEnemy(
         experience = (20..30).random(),
         attack = (1..3).random()..(4..6).random(),
         defense = 2..4,
-        items = mutableListOf()
+        items = mutableListOf(
+                Items.armor.random(),
+                Items.axes.random(),
+                Items.rings.random(),
+                Items.swords.random(),
+                Items.staffs.random(),
+                Items.healthPotion,
+                Items.healthPotion,
+                Items.energyPotion,
+                Items.energyPotion
+        )
 ) {
     override fun attackPhysical() {
-        val damage = super.attackPhysical()
-        println("$name attacked you and reduced your health to ${Character.health}")
+        super.attackPhysical()
+        println("$name attacked you and reduced your health to ${Character.healthCurrent}")
     }
 
     override fun attackMagical() {
         if (energy >= 5) {
             energy -= 5
-            Character.health -= attack.random() + 1
+            Character.healthCurrent -= attack.random() + 1
         }
     }
 

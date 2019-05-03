@@ -15,9 +15,17 @@ abstract class BaseItem {
     abstract var isEquipped: Boolean
     abstract var canBeEquipped: Boolean
 
+    /*
+    Checks if the item can be equipped:
+    - deconstructs the requirements to three variables: strength, dexterity and intelligence
+    - checks if all requirements are met compared to character stats
+    - returns true if all requirements are met
+     */
+
     fun isEquipable() : Boolean {
         if (canBeEquipped) {
             val (strength, dexterity, intelligence) = requirements
+//            println("${Character.strength} - $strength, ${Character.dexterity} - $dexterity, ${Character.intelligence} - $intelligence")
             return Character.strength >= strength && Character.dexterity >= dexterity && Character.intelligence >= intelligence
         }
         return false
@@ -28,6 +36,8 @@ abstract class BaseItem {
                 "value: $value, " +
                 "requirements: strength - ${requirements.first}, dexterity - ${requirements.second}, intelligence - ${requirements.third}"
     }
+
+    abstract fun increaseAttribute()
 
     fun printItemInfo() {
         println("----------$name----------\n" +

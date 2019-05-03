@@ -7,11 +7,22 @@ import week2.homework.ui.GameplayActions.Companion.printCharacterData
 
 class CharacterSetup {
     companion object {
+
+        /*
+        Creates a Character object with parameters given by the player.
+        Prints the character data sheet.
+         */
+
         fun start() {
             println("Welcome to the console-based RPG game!\n")
             Character.createCharacter(askForNameInput(), askForSexInput(), askForClassInput())
             printCharacterData()
         }
+
+        /*
+        Asks for a name input until a non-null and non-blank input is given.
+        Returns the input as a parameter for character creation
+         */
 
         private fun askForNameInput(): String? {
             var input: String?
@@ -23,6 +34,11 @@ class CharacterSetup {
             println("Hello, $input!\n")
             return input
         }
+
+        /*
+        Asks for a sex input until a non-null and non-blank input is given.
+        Returns the input as a parameter for character creation
+         */
 
         private fun askForSexInput(): String? {
             var input: String?
@@ -38,6 +54,12 @@ class CharacterSetup {
             println("Your character is a $input!\n")
             return input
         }
+
+        /*
+        Asks for a class input until one of the provided classes is selected.
+        Sets the character attributes (strength, dexterity, intelligence) according to the selected class.
+        Returns the input as a parameter for character creation
+         */
 
         private fun askForClassInput(): CharacterClass {
             var input: String?
@@ -63,7 +85,7 @@ class CharacterSetup {
                     }
                 }
             }
-            println("Your character's class is $chosenClass!\n")
+            println("Your character's class is ${chosenClass.toString().toLowerCase()}!\n")
             SetupCharacterData.setClassAtributes(chosenClass)
             return chosenClass
         }
