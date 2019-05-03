@@ -6,18 +6,21 @@ import kotlin.system.exitProcess
 object Boss : BaseEnemy(
         name = "Arkhanu Amun",
         experience = 500,
-        health = 100,
-        energy = 150,
-        attack = 10..20,
+        health = 80,
+        energy = 1000,
+        attack = 10..15,
         defense = 5..10,
         items = listOf()
 ) {
     override fun attackPhysical() {
-        super.attackPhysical()
-        println("$name struck a mighty blow, reducing your health to ${Character.healthCurrent}/${Character.healthMax}")
+        if ((1..10).random() > 7) attackMagical()
+        else {
+            super.attackPhysical()
+        }
     }
 
     override fun attackMagical() {
+        energy -= 20
         Character.healthCurrent -= 15
         println("$name hits you with magic bolt, reducing your health to ${Character.healthCurrent}/${Character.healthMax}")
     }

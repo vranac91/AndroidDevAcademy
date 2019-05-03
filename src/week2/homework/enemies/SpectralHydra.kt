@@ -15,19 +15,28 @@ class SpectralHydra : BaseEnemy(
                 Items.swords.random(),
                 Items.staffs.random(),
                 Items.healthPotion,
+                Items.healthPotion,
+                Items.healthPotion,
                 Items.energyPotion
         )
 ) {
     override fun attackPhysical() {
-        super.attackPhysical()
-        println("$name attacked you and reduced your health to ${Character.healthCurrent}")
+        if ((1..10).random() >= 8) attackMagical()
+        else {
+            super.attackPhysical()
+        }
     }
 
     override fun attackMagical() {
-        if (energy >= 7) {
-            energy -= 7
-            Character.healthCurrent -= attack.random() + 3
-        } else attackPhysical()
+        if (energy >= 10) {
+            energy -= 10
+            val amount = attack.random() + 3
+            Character.healthCurrent -= amount
+            println("$name attacked you with magic and reduced your health to ${Character.healthCurrent}/${Character.healthMax}")
+        } else {
+            energy += 10
+            println("$name increased its energy for 10 points")
+        }
     }
 
     override fun block(): Int {

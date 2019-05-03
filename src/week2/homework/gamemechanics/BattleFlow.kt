@@ -22,7 +22,7 @@ class BattleFlow {
         fun battle() {
             val enemy = Enemies.enemiesList.first()
             while (Character.healthCurrent > 0 && enemy.health > 0) {
-                enemy.health -= BattleActions.printBattleOptions()
+                enemy.health -= BattleActions.printBattleOptions(enemy)
                 if (enemy.health <= 0) {
                     enemy.die()
                     Character.experience += enemy.experience

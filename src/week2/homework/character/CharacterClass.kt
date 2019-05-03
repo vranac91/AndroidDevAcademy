@@ -2,7 +2,7 @@ package week2.homework.character
 
 enum class CharacterClass(var strength: Int, var dexterity: Int, var intelligence: Int) {
     WARRIOR (
-            strength = 40,
+            strength = 45,
             dexterity = 10,
             intelligence = 5
     ),

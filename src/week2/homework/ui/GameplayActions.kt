@@ -120,41 +120,40 @@ class GameplayActions {
                 }
                 val num = scanner.nextInt()
                 if (num == i) break@loop
-                if (num > 0 && num <= Character.inventoryItems.size) {
+                if (num in 1..equippableItems.size) {
                     if (equippableItems[num - 1].isEquipable()) {
-                        if(Character.equipItem(equippableItems[num - 1])) println("Item equipped: ${equippableItems[num - 1]}")
+                        if (Character.equipItem(equippableItems[num - 1])) println("Item equipped: ${equippableItems[num - 1].name}")
                         Character.refreshStats()
-                    }
-                    else println("Item cannot be equipped - requirements are not met!")
+                    } else println("Item cannot be equipped - requirements are not met!")
                 }
             }
         }
 
         fun selectItemToRemove() {
             loop@ while (true) {
-                if (Character.inventoryItems.isNotEmpty()) {
-                    println("\nSelect items to remove:\n")
-                    var i = 1
-                    for (item in Character.inventoryItems) {
-                        println("[$i] $item")
-                        i++
-                    }
-                    println("[$i] Cancel")
-                    val scanner = Scanner(System.`in`)
-                    while (!scanner.hasNextInt()) {
-                        println("Please input a valid number!")
-                        scanner.nextLine()
-                    }
-                    val num = scanner.nextInt()
-                    if (num > 0 && num <= Character.inventoryItems.size) {
-                        Character.inventoryUsedSize -= Character.inventoryItems[num - 1].size
-                        Character.inventoryItems.removeAt(num - 1)
-                        println("Item removed!")
-                    }
-                    else if (num == i) break@loop
+                if (Character.inventoryItems.isEmpty()) {
+                    println("No items to remove!")
+                    break@loop
                 }
-                else println("No items to remove!")
-                break@loop
+                println("\nSelect items to remove:\n")
+                var i = 1
+                for (item in Character.inventoryItems) {
+                    println("[$i] $item")
+                    i++
+                }
+                println("[$i] Cancel")
+                val scanner = Scanner(System.`in`)
+                while (!scanner.hasNextInt()) {
+                    println("Please input a valid number!")
+                    scanner.nextLine()
+                }
+                val num = scanner.nextInt()
+                if (num == i) break@loop
+                if (num > 0 && num <= Character.inventoryItems.size) {
+                    Character.inventoryUsedSize -= Character.inventoryItems[num - 1].size
+                    Character.inventoryItems.removeAt(num - 1)
+                    println("Item removed!")
+                }
             }
         }
 
@@ -174,12 +173,12 @@ class GameplayActions {
                         scanner.nextLine()
                     }
                     val num = scanner.nextInt()
+                    if (num == i) break@loop
                     if (num > 0 && num <= Character.equippedItems.size) {
                         Character.equippedItems.removeAt(num - 1)
                         println("Item removed permanently!")
                         Character.refreshStats()
                     }
-                    else if (num == i) break@loop
                 }
                 else println("No items to remove!")
                 break@loop

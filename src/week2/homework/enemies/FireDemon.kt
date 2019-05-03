@@ -8,7 +8,7 @@ class FireDemon : BaseEnemy(
         health = (20..30).random(),
         energy = (25..30).random(),
         experience = (40..50).random(),
-        attack = (2..4).random()..(4..8).random(),
+        attack = (4..6).random()..(6..9).random(),
         defense = 3..5,
         items = mutableListOf(
                 Items.armor.random(),
@@ -17,16 +17,20 @@ class FireDemon : BaseEnemy(
                 Items.swords.random(),
                 Items.staffs.random(),
                 Items.healthPotion,
+                Items.healthPotion,
+                Items.energyPotion,
                 Items.energyPotion
         )
 ) {
-    var attackLow = attack.start
-    var attackHigh = attack.endInclusive
-    var attackRange = attackLow..attackHigh
+    private var attackLow = attack.start
+    private var attackHigh = attack.endInclusive
+    private var attackRange = attackLow..attackHigh
 
     override fun attackPhysical() {
-        super.attackPhysical()
-        println("$name attacked you and reduced your health to ${Character.healthCurrent}")
+        if ((1..10).random() < 7) attackMagical()
+        else {
+            super.attackPhysical()
+        }
     }
 
     override fun attackMagical() {
@@ -35,7 +39,11 @@ class FireDemon : BaseEnemy(
             attackLow++
             attackHigh++
             Character.healthCurrent -= attackRange.random()
-        } else attackPhysical()
+            println("$name attacked you with magic and reduced your health to ${Character.healthCurrent}/${Character.healthMax}")
+        } else {
+            Character.healthCurrent -= 5
+            println("$name attacked you with magic and reduced your health to ${Character.healthCurrent}/${Character.healthMax}")
+        }
     }
 
     fun restoreEnergy() {

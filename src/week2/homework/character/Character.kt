@@ -1,6 +1,7 @@
 package week2.homework.character
 
 import week2.homework.data.Items
+import week2.homework.enemies.BaseEnemy
 import week2.homework.items.BaseItem
 import week2.homework.spells.BaseSpell
 import week2.homework.ui.BattleActions
@@ -129,9 +130,10 @@ object Character {
     Returns the amount of dealt physical damage.
      */
 
-    fun attackPhysical() : Int {
-        println("You've reduced the enemy's health by $attack")
-        return attack
+    fun attackPhysical(enemy: BaseEnemy) : Int {
+        val attackValue = attack - enemy.block()
+        println("You've reduced the ${enemy.name}'s health by $attackValue to ${enemy.health - attackValue}")
+        return attackValue
     }
 
     /*
@@ -149,7 +151,7 @@ object Character {
     fun block() : Int {
         val chance = 1..10
         val pick = chance.random()
-        if (pick >= 8) return defense
+        if (pick >= 8) return defense / 2
         return 0
     }
 

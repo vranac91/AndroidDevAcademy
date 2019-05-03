@@ -25,6 +25,6 @@ abstract class BaseSpell {
     }
 
     override fun toString(): String {
-        return "$name - cost: $cost"
+        return "$name - energy cost: $cost, damage: $damage"
     }
 }

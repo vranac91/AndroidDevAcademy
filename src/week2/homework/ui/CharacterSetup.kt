@@ -14,7 +14,21 @@ class CharacterSetup {
          */
 
         fun start() {
-            println("Welcome to the console-based RPG game!\n")
+            println("Welcome to the console-based RPG game!\n" +
+                    "\nHere is the basic gameplay info:\n" +
+                    "\n- When prompted, enter the name of your character using keyboard" +
+                    "\n- When prompted, select your character's sex by typing it using keyboard" +
+                    "\n- Select the desired action by typing the number before it" +
+                    "\n- Battle is turn-based; drinking potions doesn't end your turn" +
+                    "\n- Loot from each enemy is different each time you play" +
+                    "\n- It is good to check your stats and number of potions before each battle; use appropriate options for it" +
+                    "\n- Attack and defense values might vary significantly during the battle; a more complex logic involving " +
+                    "\n  chance for blocking and attacking with stronger magic attacks is employed in the background. Keep this in mind!" +
+                    "\n- You can equip up to 4 items on your character; to equip new items, you must remove old ones" +
+                    "\n- Be sure to clear unneeded items from your inventory regularly" +
+                    "\n- Spells cost energy; if you try to cast a spell without enough energy for it, your turn ends. Basic attack doesn't cost a thing" +
+                    "\n- Tha being said, Warrior class is unable to cast any spells (don't try to cast them), but has the highest starting health and attack\n" +
+                    "\nEnjoy and good luck!\n")
             Character.createCharacter(askForNameInput(), askForSexInput(), askForClassInput())
             printCharacterData()
         }

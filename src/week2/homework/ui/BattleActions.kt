@@ -4,6 +4,7 @@ import week2.homework.character.Character
 import week2.homework.data.Enemies
 import week2.homework.enemies.BaseEnemy
 import week2.homework.gamemechanics.BattleFlow
+import java.util.*
 
 class BattleActions {
     companion object {
@@ -22,9 +23,16 @@ class BattleActions {
         Starts the battle with the next living enemy from the generated list.
          */
 
-        fun attackNextEnemy() {
-            println("You are attacking ${Enemies.enemiesList.first().name}!")
+        fun attackNextEnemy(): BaseEnemy {
+            val enemy = Enemies.enemiesList.first()
+            println("You are attacking ${enemy.name} (health: ${enemy.health}, attack: ${enemy.attack}, defense: ${enemy.defense})")
+            println("Your stats: " +
+                    "health: ${Character.healthCurrent}/${Character.healthMax}, " +
+                    "energy: ${Character.energyCurrent}/${Character.energyMax}, " +
+                    "attack: ${Character.attack}, " +
+                    "defense: ${Character.defense}")
             BattleFlow.battle()
+            return enemy
         }
 
         /*
@@ -47,13 +55,16 @@ class BattleActions {
                         i++
                     }
                     println("[$i] Close\n")
-                    val num = readLine()?.toInt()
-                    if (num != null) {
-                        if (num > 0 && num <= items.size) {
-                            Character.addItemToInventory(items.get(num - 1))
-                            items.removeAt(num - 1)
-                        } else if (num == i) break@loop
+                    val scanner = Scanner(System.`in`)
+                    while (!scanner.hasNextInt()) {
+                        println("Please input a valid number!")
+                        scanner.nextLine()
                     }
+                    val num = scanner.nextInt()
+                    if (num > 0 && num <= items.size) {
+                        Character.addItemToInventory(items.get(num - 1))
+                        items.removeAt(num - 1)
+                    } else if (num == i) break@loop
                 }
             } else println("No items available!")
         }
@@ -74,11 +85,14 @@ class BattleActions {
                         println("[$i] $spell")
                         i++
                     }
-                    val spell = readLine()?.toInt()
-                    if (spell != null) {
-                        if (spell > 0 && spell <= Character.spells.size) {
-                            return Character.spells[spell - 1].activate()
-                        }
+                    val scanner = Scanner(System.`in`)
+                    while (!scanner.hasNextInt()) {
+                        println("Please input a valid number!")
+                        scanner.nextLine()
+                    }
+                    val num = scanner.nextInt()
+                    if (num > 0 && num <= Character.spells.size) {
+                        return Character.spells[num - 1].activate()
                     }
                 }
             } else println("No spells available!")
@@ -94,7 +108,7 @@ class BattleActions {
         Drinking potions does not end the turn.
          */
 
-        fun printBattleOptions(): Int {
+        fun printBattleOptions(enemy: BaseEnemy): Int {
             var input: String?
             loop@ while (true) {
                 println("\n[1] Attack with weapon\n" +
@@ -104,7 +118,7 @@ class BattleActions {
                 input = readLine()?.trim()
                 when (input) {
                     "1" -> {
-                        return Character.attackPhysical()
+                        return Character.attackPhysical(enemy)
                     }
                     "2" -> {
                         return Character.attackMagical()

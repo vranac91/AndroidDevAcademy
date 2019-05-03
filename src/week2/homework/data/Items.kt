@@ -122,21 +122,21 @@ object Items {
             Staff("Orbed Staff",
                     4,
                     20,
+                    1,
                     3,
-                    2,
                     Triple(0,0,20)
             ),
             Staff("Staff of Storms",
                     4,
                     40,
-                    4,
-                    4,
+                    2,
+                    3,
                     Triple(0,5,30)
             ),
             Staff("Mind Bender",
                     4,
                     60,
-                    5,
+                    3,
                     5,
                     Triple(0,5,40)
             )

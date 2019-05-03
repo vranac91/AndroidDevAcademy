@@ -4,6 +4,7 @@ import week2.homework.character.Character
 import week2.homework.character.CharacterClass
 import week2.homework.spells.Earthquake
 import week2.homework.spells.Fireball
+import week2.homework.spells.Heal
 import week2.homework.spells.IceStorm
 
 class SetupCharacterData {
@@ -11,12 +12,19 @@ class SetupCharacterData {
 
         /*
         Assigns chosen class's attributes to the character attributes on game start.
+        If applicable, assigns certain spells.
         Refreshes the statistics.
          */
 
         fun setClassAtributes(chosenClass : CharacterClass) {
             if (chosenClass == CharacterClass.SORCERER) {
                 Character.spells.add(Earthquake)
+                Character.spells.add(Fireball)
+                Character.spells.add(IceStorm)
+                Character.spells.add(Heal)
+            }
+
+            if (chosenClass == CharacterClass.SPELLSWORD) {
                 Character.spells.add(Fireball)
                 Character.spells.add(IceStorm)
             }

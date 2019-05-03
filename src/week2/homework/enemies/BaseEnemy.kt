@@ -21,7 +21,13 @@ abstract class BaseEnemy (
     }
 
     open fun attackPhysical() {
-        Character.healthCurrent -= attack.random() + Character.block()
+        val attack = attack.random() - Character.block()
+        if (attack < 0) {
+            println("You've blocked the attack!")
+            return
+        }
+        Character.healthCurrent -= attack
+        println("$name attacked you and reduced your health to ${Character.healthCurrent}/${Character.healthMax}")
     }
     abstract fun attackMagical()
     abstract fun block() : Int

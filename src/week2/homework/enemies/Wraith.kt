@@ -8,7 +8,7 @@ class Wraith : BaseEnemy(
         health = (10..15).random(),
         energy = (15..25).random(),
         experience = (20..30).random(),
-        attack = (1..3).random()..(4..6).random(),
+        attack = (3..6).random()..(7..8).random(),
         defense = 2..4,
         items = mutableListOf(
                 Items.armor.random(),
@@ -23,15 +23,19 @@ class Wraith : BaseEnemy(
         )
 ) {
     override fun attackPhysical() {
-        super.attackPhysical()
-        println("$name attacked you and reduced your health to ${Character.healthCurrent}")
+        if ((1..10).random() > 6) attackMagical()
+        else {
+            super.attackPhysical()
+        }
     }
 
     override fun attackMagical() {
         if (energy >= 5) {
             energy -= 5
-            Character.healthCurrent -= attack.random() + 1
-        }
+            val attack = attack.random() + 2
+            Character.healthCurrent -= attack
+            println("$name attacked you with magic and reduced your health to ${Character.healthCurrent}/${Character.healthMax}")
+        } else println("$name failed to attack you with magic")
     }
 
     override fun block(): Int { return defense.random() }
